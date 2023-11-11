@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="./assets/css/adminPanel.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Projects Overview</h2>
+            <input type="text" class="search" placeholder="search">
+            <a class="btn" href="http://127.0.0.1:5500/home.html">Go Home</a>
+            <button class="btn add"><span>Add</span></button>
+        </div>
+        <div class="table">
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3></h3>
+                <span>&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="sure">Are you sure you want to delete this post?</p>
+                <form class="modal-form">
+                    <label for="modalicon">Image</label>
+                    <input id="modalicon">
+                    <label for="modalhead">Header</label>
+                    <input id="modalhead">
+                    <label for="modaltext">Text</label>
+                    <input id="modaltext">
+                </form>
+                <div class="modal-card">
+                    <img src="https://silverback.ie/wp-content/uploads/2018/11/our-workers_big.jpg">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, porro!</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn modal-btn-left">Close</button>
+                <button class="btn modal-btn-right"></button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/scripts/adminPanel.js"></script>
+</body>
+</html>

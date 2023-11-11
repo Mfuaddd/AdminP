@@ -1,0 +1,35 @@
+.container{
+    max-width: 1600px;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+.textbox{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+.card{
+    overflow: visible;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.card img{
+    height: 225px;
+    width: 100%;
+}
+.card h3{
+    margin-top: 10px;
+    padding:  0 10px;
+    overflow: visible;
+}
+.card p{
+    padding: 10px;
+    overflow: visible;
+}

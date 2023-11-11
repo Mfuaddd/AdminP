@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/adminPanel.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:5500/adminPanel.html" class="addWrapper">
+        <label for="image">Image</label>
+        <input type="text" id="image">
+        <label for="header">Header</label>
+        <input type="text" id="header">
+        <label for="text">Text</label>
+        <input type="text" id="text">
+        <div class="formAction">
+            <input type="submit" id="submit" class="btn submit">
+            <a href="http://127.0.0.1:5500/adminPanel.html" class="btn goHome">Go Home</a>
+        </div>
+    </form>
+    <script>
+        const submit = document.getElementById("submit")
+        submit.addEventListener("click",function () {
+            const img = document.getElementById("image")
+            const head = document.getElementById("header")
+            const text = document.getElementById("text")
+            fetch('http://localhost:3000/projects/', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({img:img.value, header: head.value,text:text.value})
+            })
+        })
+
+    </script>
+</body>
+</html>
